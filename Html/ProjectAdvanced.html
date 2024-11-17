@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multimedia va Formalar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            background: #35424a;
+            color: #ffffff;
+            padding: 10px 0;
+            text-align: center;
+        }
+        .container {
+            margin: 20px 0;
+        }
+        h2 {
+            margin-top: 20px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #35424a;
+            color: #ffffff;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Multimedia va Formalar</h1>
+</header>
+
+<div class="container">
+    <h2>Audio Ovoz</h2>
+    <audio controls>
+        <source src="audio-example.mp3" type="audio/mpeg">
+        Sizning brauzeringiz audio elementini qo'llab-quvvatlamaydi.
+    </audio>
+
+    <h2>Video</h2>
+    <video width="320" height="240" controls>
+        <source src="video-example.mp4" type="video/mp4">
+        Sizning brauzeringiz video elementini qo'llab-quvvatlamaydi.
+    </video>
+
+    <h2>Canvas</h2>
+    <canvas id="myCanvas" width="300" height="150" style="border:1px solid #000000;"></canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+        ctx.fillStyle = '#FF0000';
+        ctx.fillRect(20, 20, 150, 100);
+    </script>
+
+    <h2>Iframe</h2>
+    <iframe src="https://www.example.com" width="300" height="200" title="Iframe Example"></iframe>
+
+    <h2>Kirish Turlari</h2>
+    <form>
+        <label for="textInput">Matn Kiriting:</label>
+        <input type="text" id="textInput" name="textInput"><br><br>
+
+        <label for="emailInput">Email Kiriting:</label>
+        <input type="email" id="emailInput" name="emailInput"><br><br>
+
+        <label for="passwordInput">Parol Kiriting:</label>
+        <input type="password" id="passwordInput" name="passwordInput"><br><br>
+
+        <label for="numberInput">Son Kiriting:</label>
+        <input type="number" id="numberInput" name="numberInput"><br><br>
+
+        <input type="submit" value="Yuborish">
+    </form>
+
+    <h2>Ro'yxatdan O'tish Formasi</h2>
+    <form>
+        <label for="regName">Ism:</label>
+        <input type="text" id="regName" name="regName" required><br><br>
+
+        <label for="regEmail">Email:</label>
+        <input type="email" id="regEmail" name="regEmail" required><br><br>
+
+        <label for="regPassword">Parol:</label>
+        <input type="password" id="regPassword" name="regPassword" required><br><br>
+
+        <input type="submit" value="Ro'yxatdan O'tish">
+    </form>
+
+    <h2>Aloqa Formasi</h2>
+    <form>
+        <label for="contactName">Ism:</label>
+        <input type="text" id="contactName" name="contactName" required><br><br>
+
+        <label for="contactEmail">Email:</label>
+        <input type="email" id="contactEmail" name="contactEmail" required><br><br>
+
+        <label for="message">Xabar:</label><br>
+        <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
+        <input type="submit" value="Yuborish">
+    </form>
+</div>
+
+<footer>
+    <p>© 2024 Multimedia va Formalar</p>
+</footer>
+
+</body>
+</html>
